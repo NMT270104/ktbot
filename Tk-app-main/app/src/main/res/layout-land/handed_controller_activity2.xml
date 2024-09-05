@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:background="#712222"
+    android:layout_height="match_parent"
+    android:weightSum="2"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:background="#F4F4F6"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <io.github.controlwear.virtual.joystick.android.JoystickView
+            android:id="@+id/gamepad_moving"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            custom:JV_backgroundColor="#12AAAA"
+            custom:JV_borderColor="#F1E78F"
+            custom:JV_borderWidth="@dimen/_8sdp"
+            android:outlineAmbientShadowColor="#f000"
+            android:outlineSpotShadowColor="#f000"
+            custom:JV_buttonImage="@drawable/controllerbutton"
+            custom:JV_buttonSizeRatio="20%"
+            custom:JV_fixedCenter="false" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:background="#F4F4F6"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <io.github.controlwear.virtual.joystick.android.JoystickView
+                android:id="@+id/gamepad_control"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                custom:JV_backgroundColor="#12AAAA"
+                custom:JV_borderColor="#F1E78F"
+                custom:JV_borderWidth="@dimen/_8sdp"
+                android:outlineAmbientShadowColor="#f000"
+                android:outlineSpotShadowColor="#f000"
+                custom:JV_buttonImage="@drawable/controllerbutton"
+                custom:JV_buttonSizeRatio="20%"
+                custom:JV_fixedCenter="false" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+include ':fancygifdialoglib'
+include ':FastBleLib'
+include ':blockly'
+include ':blockly'
+rootProject.name='TKBot'
+include ':app'
+include ':bluetoothlibrary'
+include ':app'
